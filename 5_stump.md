@@ -1,6 +1,6 @@
 # 5. スタンプ機能
 
-変更を加える前のmastodonには、ある投稿にたいしてリアクションするには以下の写真のように返信、共有、お気に入り、ブックマークの機能がある。  
+変更を加える前のmastodonには、ある投稿に対してリアクションするには以下の写真のように返信、共有、お気に入り、ブックマークの機能がある。  
 
 
 ![5-1.png](/image/5-1.png)
@@ -22,7 +22,7 @@
 ```
 <IconButton className='status__action-bar__button star-icon' animate active={status.get('favourited')} title={intl.formatMessage(messages.favourite)} icon='star' onClick={this.handleFavouriteClick} counter={withCounters ? status.get('favourites_count') : undefined} />
 ```
-上のような定義によって画面に表示される。IconButtonというのはicon_button.tsxで定義された型であり、status.get(favourited)はバックエンドから送られたデータでお気に入りかどうかを示すbool値が入り、ボタンがクリックされるとhandleFavouriteClick関数が呼び出される。この関数は同じファイル内に定義されており、以下のようである。
+上のような定義によって画面に表示される。IconButtonというのはicon_button.tsxで定義された型であり、status.get(favourited)はバックエンドからjson形式で送られたデータでお気に入りかどうかを示すbool値が入り、ボタンがクリックされるとhandleFavouriteClick関数が呼び出される。この関数は同じファイル内に定義されており、以下のようである。
 ```
 handleFavouriteClick = () => {
 const { signedIn } = this.context.identity;
@@ -347,13 +347,3 @@ end
 |schema.rb|db/schema.rb|
 |20231022124735_create_thumbsup.rb|db/migrate/20231022124735_create_thumbsup.rb|
 |20231023070913_thumbsupunique.rb|db/migrate/20231023070913_thumbsupunique.rb|
-
-
-
-
-
-
-
-
-
-
