@@ -347,13 +347,3 @@ end
 |schema.rb|db/schema.rb|
 |20231022124735_create_thumbsup.rb|db/migrate/20231022124735_create_thumbsup.rb|
 |20231023070913_thumbsupunique.rb|db/migrate/20231023070913_thumbsupunique.rb|
-
-
-
-
-
-
-
-
-
-
