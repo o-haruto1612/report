@@ -9,15 +9,20 @@ https://www.google.co.jp/
 
 このくらいの短さのリンクなら良いのですが、もっと長いリンクだったらどうでしょうか。  
 
-https://docs.google.com/presentation/d/1l4uuRRWg0yJ1IKZh3wpg_zbIxPPkEvbt77-29Nwl96U/edit?pli=1#slide=id.g25d16648f87_2_179
+https://www.google.com/search?q=mastodon&rlz=1C5CHFA_enJP991JP1007&oq=mastodo&gs_lcrp=EgZjaHJvbWUqBwgAEAAYgAQyBwgAEAAYgAQyBggBEEUYOTIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIGCAUQRRg9MgYIBhBFGD0yBggHEEUYPagCALACAA&sourceid=chrome&ie=UTF-8
 
 こんな長いリンクなんて出てきた際には文章全体がわかりにくくなってしまいます。  
 そんな時Slackでは以下のようにリンクを文字に埋め込む表示方法ができます。
 
-[このリンクにアクセス](https://docs.google.com/presentation/d/1l4uuRRWg0yJ1IKZh3wpg_zbIxPPkEvbt77-29Nwl96U/edit?pli=1#slide=id.g25d16648f87_2_179)
+[このリンクにアクセス](https://www.google.com/search?q=mastodon&rlz=1C5CHFA_enJP991JP1007&oq=mastodo&gs_lcrp=EgZjaHJvbWUqBwgAEAAYgAQyBwgAEAAYgAQyBggBEEUYOTIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIGCAUQRRg9MgYIBhBFGD0yBggHEEUYPagCALACAA&sourceid=chrome&ie=UTF-8)  
+
+【Slackの実際の画面の様子】  
+<!--画像挿入-->
+
+
 
 それではMastodonの場合はどうでしょうか。  
-長いURLを<!-- ツイートのかわりの言い方 -->すると以下のようになります。  
+長いURLをトゥート(投稿のこと)すると以下のようになります。  
 <!--画像挿入-->
 
 ただしSlackのようにリンクを文字に埋め込むことはできません。この章ではこの機能をMastodonに実装していきます。
